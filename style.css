@@ -1,0 +1,90 @@
+:root {
+  /* ### Primary */
+
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* ### Neutral */
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+* {
+  padding: unset;
+  margin: unset;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Dark-Blue);
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: 28px;
+}
+
+.container {
+  position: relative;
+  height: 300px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--Dark-Grayish-Blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.head {
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.middle {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.middle p {
+  text-align: center;
+  color: var(--Light-Cyan);
+}
+
+.bottom img {
+  width: 100%;
+}
+/* .container::after {
+  content: url(./images/icon-dice.svg);
+  position: absolute;
+  bottom: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--Neon-Green);
+  place-items: center;
+  cursor: pointer;
+}
+.container:hover::after {
+  box-shadow: 0 0 20px var(--Neon-Green);
+} */
+.indicator {
+  position: relative;
+  bottom: -50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--Neon-Green);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.indicator:hover {
+  box-shadow: 0 0 20px var(--Neon-Green);
+}
