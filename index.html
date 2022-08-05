@@ -29,18 +29,25 @@
   <body>
     <!-- Advice ID goes here -->
     <div class="container">
-      <div class="head"><h1>Advice #117</h1></div>
+      <div class="head">
+        <h1>Advice #<span id="adviceId">117</span></h1>
+      </div>
       <div class="middle">
         <!-- Advice text goes here -->
         <p>
-          "It is easy to sit up and take notice, what's difficult is getting up
-          and taking action."
+          "<span id="advice"
+            >It is easy to sit up and take notice, what's difficult is getting
+            up and taking action.</span
+          >"
         </p>
       </div>
       <div class="bottom">
-        <img src="./images/pattern-divider-desktop.svg" alt="" />
+        <img src="./images/pattern-divider-desktop.svg" alt="divider" />
       </div>
-      <div class="indicator"><img src="./images/icon-dice.svg" alt="" /></div>
+      <button id="buttonDice">
+        <img src="./images/icon-dice.svg" alt="dice" />
+      </button>
+      <!-- <div class="indicator"><img src="./images/icon-dice.svg" alt="" /></div> -->
     </div>
 
     <div class="attribution">
@@ -49,5 +56,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Kolawole, Taiwo</a>.
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>

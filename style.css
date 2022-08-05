@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
 :root {
   /* ### Primary */
 
@@ -17,39 +19,49 @@
 }
 
 body {
+  font-family: "Manrope", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--Dark-Blue);
+  /* background-image: url("./design/desktop-design.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
   min-width: 100vw;
   min-height: 100vh;
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .container {
   position: relative;
-  height: 300px;
-  width: 500px;
+  margin-top: 15px;
+  text-align: center;
+  height: 310px;
+  width: 510px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
   background-color: var(--Dark-Grayish-Blue);
+  /* background-color: rgba(0, 0, 0, 0.2); */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 45px;
   margin-bottom: 50px;
 }
 
-.head {
+.head > h1 {
   color: var(--Neon-Green);
   text-transform: uppercase;
-  font-size: 12px;
+  letter-spacing: 2px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 .middle {
   height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 .middle p {
   text-align: center;
@@ -59,32 +71,18 @@ body {
 .bottom img {
   width: 100%;
 }
-/* .container::after {
-  content: url(./images/icon-dice.svg);
+
+#buttonDice {
   position: absolute;
   bottom: -30px;
-  width: 60px;
-  height: 60px;
+  border-style: none;
   border-radius: 50%;
   background-color: var(--Neon-Green);
-  place-items: center;
-  cursor: pointer;
-}
-.container:hover::after {
-  box-shadow: 0 0 20px var(--Neon-Green);
-} */
-.indicator {
-  position: relative;
-  bottom: -50px;
-  width: 60px;
   height: 60px;
-  border-radius: 50%;
-  background-color: var(--Neon-Green);
-  display: grid;
-  place-content: center;
-  cursor: pointer;
+  width: 60px;
+  transition: all ease-in 0.5s;
 }
 
-.indicator:hover {
+#buttonDice:hover {
   box-shadow: 0 0 20px var(--Neon-Green);
 }
