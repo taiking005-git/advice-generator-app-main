@@ -86,3 +86,8 @@ body {
 #buttonDice:hover {
   box-shadow: 0 0 20px var(--Neon-Green);
 }
+
+#buttonDice i {
+  color: blue;
+  font: 24px;
+}
